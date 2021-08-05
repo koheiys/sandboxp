@@ -1,4 +1,4 @@
-class Foo {
+class Bar {
   String str;
   int num;
   
@@ -7,4 +7,4 @@ class Foo {
   }
 }
 
-return Foo;
+return Bar;
