@@ -9,7 +9,7 @@ class Foo {
   }
   
   def hello(String msg) {
-    return "Hello ${msg} : str=${str}, num=${num}"; 
+   return "Hello ${msg} : str=${str}, num=${num}, testSecret1=${testSecret1}"; 
   }
   
 }
