@@ -6,3 +6,5 @@ class Bar {
     return "Hello ${msg} : str=${str}, num=${num}";
   }
 }
+
+return Bar;
