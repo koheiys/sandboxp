@@ -9,8 +9,8 @@ class Foo {
   }
   
   def hello(String msg) {
-    withCredentials([string(credentialsId: 'secret-test-1', variable: 'testSecret1'), string(credentialsId: 'secret-test-1', variable: 'testSecret2')]) {
-      return "Hello ${msg} : str=${str}, num=${num}, testSecret1=${testSecret1}"; 
+    withCredentials([string(credentialsId: 'secret-test-1', variable: 'ts1')]) {
+      return "Hello ${msg} : str=${str}, num=${num}, ts1=${ts1}"; 
     }
   }
   
