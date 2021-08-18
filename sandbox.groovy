@@ -9,9 +9,7 @@ class Foo {
   }
   
   def hello(String msg) {
-    withCredentials([string(credentialsId: 'secret-test-1', variable: 'ts1')]) {
-      return "Hello ${msg} : str=${str}, num=${num}, ts1=${ts1}"; 
-    }
+      return "Hello ${msg} : str=${str}, num=${num}"; 
   }
   
 }
@@ -20,6 +18,16 @@ String strField;
 
 def createFoo(String str) {
   return new Foo(str);
+}
+
+def doScript() {
+
+ withCredentials([string(credentialsId: 'secret-test-1', variable: 'ts1')]) {
+  
+  println "ts1=${ts1}"
+  
+ }
+ 
 }
 
 def doLoadSample() {
