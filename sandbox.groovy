@@ -33,6 +33,8 @@ def doScript() {
   
  }
  
+ println X_PATTERNS;
+
 }
 
 def doLoadSample() {
@@ -40,7 +42,6 @@ def doLoadSample() {
  def Bar = load 'Bar.groovy';
  def bar = Bar.newInstance(str: '多段loadテスト', num: 222);
  println bar.hello('world bar')
- println X_PATTERNS;
 }
 
 return this;
