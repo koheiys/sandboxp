@@ -1,10 +1,18 @@
 import java.time.format.DateTimeFormatter;
 
-fmt = DateTimeFormatter.ofPattern("uuuuMM");
+MainScript create() {
+  return new MainScript(); 
+}
 
-void main() {
-  println "Hello";
-  println "fmt=${fmt}";
+class MainScript {
+
+  private static final DateTimeFormatter fmt = DateTimeFormatter.ofPattern("uuuuMM");
+
+  void main() {
+    println "Hello";
+    println "fmt=${fmt}";
+  }
+  
 }
 
 return this;
