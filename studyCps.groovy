@@ -1,5 +1,7 @@
 import java.time.format.DateTimeFormatter;
+import groovy.transform.Field;
 
+@Field
 private static final DateTimeFormatter FMT_S = DateTimeFormatter.ofPattern("uuuuMM");
 
 void main(String msg) { 
