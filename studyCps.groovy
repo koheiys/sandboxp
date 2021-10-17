@@ -8,7 +8,7 @@ class MainScript {
 
   private static final DateTimeFormatter fmt = DateTimeFormatter.ofPattern("uuuuMM");
 
-  void main() {
+  void hello() {
     println "Hello";
     println "fmt=${fmt}";
   }
