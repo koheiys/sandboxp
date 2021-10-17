@@ -9,7 +9,7 @@ class MainScript {
   private static final DateTimeFormatter fmt = DateTimeFormatter.ofPattern("uuuuMM");
 
   void hello() {
-    println "Hello";
+    echo "Hello";
     println "fmt=${fmt}";
   }
   
