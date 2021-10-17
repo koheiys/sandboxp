@@ -1,6 +1,6 @@
 import java.time.format.DateTimeFormatter;
 
-def fmt = DateTimeFormatter.ofPattern("uuuuMM");
+fmt = DateTimeFormatter.ofPattern("uuuuMM");
 
 void main() {
   println "Hello";
