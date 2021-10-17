@@ -1,5 +1,12 @@
 import java.time.format.DateTimeFormatter;
 
+private static final DateTimeFormatter FMT_S = DateTimeFormatter.ofPattern("uuuuMM");
+
+void main(String msg) { 
+  println "Hello ${msg} !!"
+  println "FMT_S=${FMT_S}"
+}
+
 MainScript create() {
   return new MainScript(); 
 }
