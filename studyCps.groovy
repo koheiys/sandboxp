@@ -13,6 +13,10 @@ class MainScript {
     println "fmt=${fmt}";
   }
   
+  String getString() {
+    return "Hello!!"; 
+  }
+  
 }
 
 return this;
