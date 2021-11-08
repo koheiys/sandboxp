@@ -6,6 +6,7 @@ public class DemoApplicationForSQ {
 	}
 
 	public void doSomething2() {
+		// do nothing
 	}
 
 	public int doSomething3() {
