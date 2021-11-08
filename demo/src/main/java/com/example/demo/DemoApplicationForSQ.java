@@ -15,6 +15,7 @@ public class DemoApplicationForSQ {
 	}
 
 	public void doSomething4() {
+		// do nothing!
 	}
 
 }
