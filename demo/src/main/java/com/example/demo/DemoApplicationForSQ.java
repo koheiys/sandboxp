@@ -8,7 +8,7 @@ public class DemoApplicationForSQ {
 	public void doSomething2() {
 	}
 
-	public void doSomething3() {
+	public int doSomething3() {
 		return 777;
 	}
 
