@@ -9,7 +9,7 @@ public class DemoApplicationForSQ {
 	}
 
 	public int doSomething3() {
-		return 777;
+		return 777788;
 	}
 
 }
