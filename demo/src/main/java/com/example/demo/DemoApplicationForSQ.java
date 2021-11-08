@@ -10,10 +10,11 @@ public class DemoApplicationForSQ {
 		// do nothing.
 	}
 
-	public void doSomething3() {
-	}
-
 	public int doSomething3() {
 		return 777;
 	}
+
+	public void doSomething4() {
+	}
+
 }
