@@ -14,10 +14,6 @@ public class DemoApplication {
 	public void doSomething() {
 	}
 	
-	public void foo() {
-		Demo3Utils.hello("test");
-	}
-
 	public void deps() {
 		Demo2Utils.hello("test");
 	}
