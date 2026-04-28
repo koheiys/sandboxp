@@ -1,10 +1,12 @@
 name: Sandbox
 
+run-name: Restart ${DEPLOY_ENV}-${SERVICE_NAME} by @${{ github.actor }}
+
 on:
   workflow_dispatch:
     inputs:
       service:
-        description: '対象サービス'
+        description: 対象サービス
         required: true
         type: choice
         options:
@@ -12,7 +14,7 @@ on:
           - bar
           - baz
       environment:
-        description: '対象環境'
+        description: 対象環境
         required: true
         type: choice
         options:
@@ -30,5 +32,5 @@ jobs:
       - name: do sandbox
         run: |
           # aaa
-          ECS_SERVICE_NAME="${DEPLOY_ENV}-${CLUSTER_NAME}"
+          ECS_SERVICE_NAME="${DEPLOY_ENV}-${SERVICE_NAME}"
           echo $ECS_SERVICE_NAME
