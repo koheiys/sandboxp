@@ -1,0 +1,34 @@
+name: Sandbox
+
+on:
+  workflow_dispatch:
+    inputs:
+      service:
+        description: '対象サービス'
+        required: true
+        type: choice
+        options:
+          - foo
+          - bar
+          - baz
+      environment:
+        description: '対象環境'
+        required: true
+        type: choice
+        options:
+          - dev
+          - stg
+
+env:
+  SERVICE_NAME: ${{ inputs.service }}
+  DEPLOY_ENV: ${{ inputs.environment }}
+
+jobs:
+  do-sandbox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: do sandbox
+        run: |
+          # aaa
+          ECS_SERVICE_NAME="${DEPLOY_ENV}-${CLUSTER_NAME}"
+          echo $ECS_SERVICE_NAME
