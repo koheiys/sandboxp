@@ -1,6 +1,6 @@
 name: Sandbox
 
-run-name: Restart ${DEPLOY_ENV}-${SERVICE_NAME} by @${{ github.actor }}
+run-name: Restart ${{ inputs.environment }}-${{ inputs.service }} by @${{ github.actor }}
 
 on:
   workflow_dispatch:
