@@ -34,3 +34,4 @@ jobs:
           # aaa
           ECS_SERVICE_NAME="${DEPLOY_ENV}-${SERVICE_NAME}"
           echo $ECS_SERVICE_NAME
+          echo latest!!
