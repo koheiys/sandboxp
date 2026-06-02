@@ -34,4 +34,9 @@ jobs:
           # aaa
           ECS_SERVICE_NAME="${DEPLOY_ENV}-${SERVICE_NAME}"
           echo $ECS_SERVICE_NAME
-          echo latest!!
+          echo GITHUB_EVENT_NAME=$GITHUB_EVENT_NAME
+          echo GITHUB_REF_TYPE=$GITHUB_REF_TYPE
+          echo github.event_name=${{ github.event_name }}
+          echo github.sha=${{ github.sha }}
+          echo github.ref_type=${{ github.ref_type }}
+          
