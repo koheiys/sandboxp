@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class DemoApplicationForSQ {
+public class DemoApplicationEx2 {
 
 	public void doSomething() {
 	}
